@@ -1,0 +1,200 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #fefefe, #eafdfd, #fdf0fa);
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  flex-wrap: nowrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 35px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.hire-btn {
+  background: black;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.hire-btn:hover {
+  background: #333;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 80px 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Vertical Social Links on Left */
+/* Vertical Socials - Styled Like Image */
+.socials {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  writing-mode: vertical-rl;
+  color: #000;
+  font-size: 14px;
+  z-index: 999;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.socials a:hover {
+  color: #00c17c;
+}
+
+.socials a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #00c17c;
+  transition: width 0.3s ease;
+}
+
+.socials a:hover::after {
+  width: 100%;
+}
+
+
+/* Hero Image (Middle Left) */
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+/* Content (Right Side) */
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.greeting {
+  font-size: 16px;
+  color: #00c17c;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 strong {
+  color: #000;
+}
+
+.desc {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #00c17c;
+  color: white;
+}
+
+.primary:hover {
+  background: #019b64;
+}
+
+.secondary {
+  background: #f3f3f3;
+  color: #333;
+}
+
+.secondary:hover {
+  background: #ddd;
+}
